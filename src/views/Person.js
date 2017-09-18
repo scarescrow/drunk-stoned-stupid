@@ -75,7 +75,7 @@ class Person extends Component {
 							          lg={1}
 							          key={i}
 							 >
-								 <Card className={this.classes.card}>
+								 <Card className={this.classes.card} elevation={8}>
 								 	<CardContent>
 								          		<Typography component="h3">
 								          			{quality}
