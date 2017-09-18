@@ -69,10 +69,10 @@ class Person extends Component {
 				{this.state.qualities.map((quality, i) => {
 						return (
 							<Grid item
-							          xs={11} 
+							          xs={5}
 							          sm={5} 
 							          md={2} 
-							          lg={1}
+							          lg={2}
 							          key={i}
 							 >
 								 <Card className={this.classes.card} elevation={8}>
