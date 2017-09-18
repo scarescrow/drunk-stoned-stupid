@@ -6,12 +6,6 @@ import Divider from 'material-ui/Divider';
 
 import firebase from './db/firebase-config';
 
-const links = [
-	{ isExact: false, linkTo: '/characters/aakash', text: 'Aakash'},
-	{ isExact: false, linkTo: '/characters/sagnik', text: 'Sagnik'},
-	{ isExact: false, linkTo: '/characters/shreya', text: 'Shreya'},
-];
-
 class SideNav extends Component {
 	constructor(props) {
 		super(props);
@@ -25,7 +19,7 @@ class SideNav extends Component {
 				var person = {
 					isExact: false,
 					linkTo: '/characters/' + key,
-					text: people[key]
+					text: people[key]['properName']
 				};
 				links.push(person);
 			}
@@ -34,8 +28,7 @@ class SideNav extends Component {
 	}
 
 	getPeople(callback) {
-		var ref = firebase.database().ref('people');
-		firebase.database().ref('people').once("value", function(snap) {
+		firebase.database().ref('personality').once("value", function(snap) {
 			callback(snap.val());
 		});
 	}
