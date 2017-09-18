@@ -25,3 +25,4 @@ yarn.lock
 /src/db/firebase-config.js
 .firebaserc
 database.rules.json
+firebase.json
