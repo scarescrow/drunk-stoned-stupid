@@ -72,7 +72,7 @@ class Person extends Component {
 							          xs={5}
 							          sm={5} 
 							          md={2} 
-							          lg={2}
+							          lg={1}
 							          key={i}
 							 >
 								 <Card className={this.classes.card} elevation={8}>
