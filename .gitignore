@@ -20,4 +20,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
+
+# firebase-config
 /src/db/firebase-config.js
+.firebaserc
+database.rules.json
